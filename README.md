@@ -11,8 +11,8 @@ HTTPS : git clone https://github.com/LeRueHein/DevSecSymfony.git
 2.Créer le .env
 ```bash
 APP_ENV=dev
-APP_SECRET=secret
-DATABASE_URL="sqlsrv://user:password@localhost/testbdd"
+APP_SECRET=rzeyuiryzeuryezuiyr
+DATABASE_URL="sqlsrv://user:password@localhost/DevSecSymfony"
 ```
 
 3.Installez les dépendances
