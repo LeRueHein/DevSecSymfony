@@ -21,17 +21,16 @@ class RegistrationFormType extends AbstractType
             ->add('email', EmailType::class, [
                 'label' => 'Email',
             ])
+
+
+
             ->add('plainPassword', PasswordType::class, [
                 'mapped' => false,
                 'attr' => ['autocomplete' => 'new-password'],
                 'label' => 'Mot de passe',
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Entrez un mot de passe',
-
-                    ]),
                     new Length([
-                        'min' => 2,
+                        'min' => 6,
                         'minMessage' => 'Votre mot de passe doit au moins faire {{ limit }} caractères',
                         'max' => 4096,
                     ]),
